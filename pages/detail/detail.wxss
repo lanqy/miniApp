@@ -1,0 +1,4 @@
+@import "../../utils/wxParse/wxParse.wxss";
+.content{padding:20rpx;color: #666;}
+.title{font-size: 50rpx;font-weight: bold;text-align: center;}
+.logo{max-width: 100%;height: 200rpx;}

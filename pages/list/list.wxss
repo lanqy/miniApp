@@ -1,0 +1,10 @@
+.list{height: 100%;background:#fff;}
+.liveTab{display: flex;}
+.liveTab .nav-item{border-bottom: 2px solid #ddd;flex:1;font-size: 30rpx;text-align:center;height:80rpx;line-height:80rpx;color:#666;}
+.liveTab .active{border-bottom:2px solid #42b983;color:#42b983;}
+.item{width: 341rpx;height: 280rpx;border:1px solid #ddd;text-align: center;position: relative;float: left;margin-right: 20rpx;margin-top: 20rpx;}
+.even{margin-right: 0;}
+.name{color: #008cba;font-size: 50rpx;}
+.porfile{max-width: 100%;height: 200rpx;}
+.location{height: 96rpx;line-height: 96rpx;position: relative;background:#fff;position: absolute;left:0;bottom:0;width: 100%;}
+.scroll-list{margin:0 10rpx;}

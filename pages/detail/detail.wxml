@@ -1,0 +1,12 @@
+<import src="../../utils/wxParse/wxParse.wxml"/>
+<view class="container">
+  <view class="title" style="position:relative;">
+    <view>
+      <image src="{{item.logo}}" class="logo" mode="center" />
+      <view>{{item.title}}</view>
+    </view>
+  </view>
+  <view class="content">
+    <template is="wxParse" data="{{wxParseData:detail.nodes}}" />
+  </view>
+</view>

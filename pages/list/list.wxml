@@ -1,0 +1,13 @@
+<import src="../common/list.wxml"/>
+<view class="list">
+  <view class="liveTab_warp">
+    <view class="liveTab">
+      <text bindtap="switchTap" data-index="{{ index }}" data-id="{{ item.key }}" class="nav-item {{ activeType === item.key ? 'active' : '' }}" wx:for="{{ navs }}" wx:key="">{{item.name}}</text>
+    </view>
+  </view>
+  <view class="scroll-list">
+    <scroll-view scroll-y="true" style="background:#fff;height: {{ (deviceHeight - 49) + 'px' }}" bindscrolltolower="getMoreLives" bindscrolltoupper="onRefreshLives">
+      <template is="list" data="{{ list }}"/>
+    </scroll-view>
+  </view>
+</view>

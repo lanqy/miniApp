@@ -1,0 +1,14 @@
+<import src="../common/prompt.wxml"/>
+
+<template name="list">
+	<view class="scroll-list">
+    <view wx:for="{{ list.items }}" wx:key="" bindtap="navigateTo" data-id="{{ item.info.id }}">
+      <view data-index="{{index}}" class="item {{(index + 1) % 2 === 0 ? 'even' : ''}}">
+        <image src="{{item.logo}}" class="porfile" mode="center" />
+        <view class="location">
+					<text class="name">{{item.title}}</text>
+        </view>
+      </view>
+    </view>
+	</view>
+</template>
